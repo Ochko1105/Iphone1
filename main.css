@@ -210,6 +210,16 @@ aside {
   background-size: cover;
   background-position: center;
   width: calc(50% - 6px);
+  text-align: center;
+}
+.figure-item3head {
+  padding-top: 58px;
+}
+.figure-item3text {
+  font-size: 18px;
+  color: rgba(29, 29, 31, 1);
+  padding-top: 4px;
+  padding-bottom: 16px;
 }
 .figure-item4 {
   height: 580px;
@@ -224,6 +234,7 @@ aside {
   background-size: cover;
   background-position: center;
   width: calc(50% - 6px);
+  text-align: center;
 }
 .figure-item6 {
   height: 580px;
@@ -231,6 +242,17 @@ aside {
   background-size: cover;
   background-position: center;
   width: calc(50% - 6px);
+  text-align: center;
+}
+.figure-item6button2 {
+  text-align: center;
+  height: 44px;
+  width: 112px;
+  background-color: transparent;
+  border-radius: 999px;
+  border-color: rgba(41, 151, 255, 1);
+  color: rgba(41, 151, 255, 1);
+  font-size: 16px;
 }
 
 @media (max-width: 600px) {
