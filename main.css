@@ -222,6 +222,16 @@ aside {
   padding-top: 4px;
   padding-bottom: 16px;
 }
+.figure-item3button {
+  height: 44px;
+  width: 167px;
+  background-color: rgba(0, 113, 227, 1);
+  border-radius: 999px;
+  color: white;
+  border-color: transparent;
+  font-size: 16px;
+}
+
 .figure-item4 {
   height: 580px;
   background-image: url(Fig4.png);
@@ -261,6 +271,8 @@ aside {
   color: rgba(41, 151, 255, 1);
   font-size: 16px;
 }
+/* figure end */
+/* footer */
 .footer {
   display: flex;
   gap: 16px;
@@ -272,6 +284,7 @@ aside {
   width: 1250px;
   height: 668px;
   display: flex;
+  min-width: 600px;
 }
 .footerbg2head {
   height: 44px;
@@ -293,10 +306,14 @@ aside {
 .footerbg2textspan {
   color: rgba(255, 255, 255, 1);
 }
+/* footer end */
+/* summary */
 summary {
   text-align: center;
   margin: 12px auto;
 }
+/* summary end */
+/* mark */
 mark {
   display: flex;
   gap: 16px;
@@ -353,6 +370,15 @@ mark {
   padding-top: 198px;
   padding-left: 15px;
 }
+/* mark end */
+/* figcaption */
+figcaption {
+  padding-top: 18px;
+  padding-left: 1880px;
+  padding-bottom: 21px;
+}
+/* figcaption end */
+
 @media (max-width: 600px) {
   .figure {
     flex-direction: column;
@@ -382,5 +408,35 @@ mark {
   section {
     background-image: url(Figuresmall.png);
     height: 500px;
+  }
+  mark {
+    flex-direction: column;
+  }
+  .mark1 {
+    width: 100%;
+  }
+  .mark2 {
+    width: 100%;
+  }
+  .mark3 {
+    width: 100%;
+  }
+
+  .mark4 {
+    width: 100%;
+  }
+  .mark5 {
+    width: 100%;
+  }
+  .footer {
+    flex-direction: column;
+  }
+  .footerbg2 {
+    width: 100%;
+  }
+  .mark2text {
+    justify-content: center;
+    text-align: center;
+    align-items: center;
   }
 }
