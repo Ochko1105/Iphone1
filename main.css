@@ -273,18 +273,34 @@ aside {
 }
 /* figure end */
 /* footer */
+footer {
+  width: 2000px;
+  overflow: scroll;
+
+  display: flex;
+  gap: 16px;
+  height: 668px;
+}
 .footer {
   display: flex;
   gap: 16px;
+}
+.footerbg1 {
+  background-image: url(Linksmall.png);
+  background-repeat: no-repeat;
+  width: 274px;
+  height: 668px;
+  background-position: center;
+  background-size: cover;
 }
 .footerbg2 {
   background-image: url(Link1.png);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
   width: 1250px;
   height: 668px;
   display: flex;
-  min-width: 600px;
 }
 .footerbg2head {
   height: 44px;
@@ -300,11 +316,19 @@ aside {
 .footerbg2text {
   font-size: 17px;
   color: rgba(255, 255, 255, 0.6);
-  margin-top: 580px;
-  margin-left: 20px;
+  padding-top: 580px;
+  padding-left: 20px;
 }
 .footerbg2textspan {
   color: rgba(255, 255, 255, 1);
+}
+.footerbg3 {
+  background-image: url(Linksmall2.png);
+  background-repeat: no-repeat;
+  width: 274px;
+  height: 668px;
+  background-position: center;
+  background-size: cover;
 }
 /* footer end */
 /* summary */
@@ -320,6 +344,7 @@ mark {
   background-color: white;
   color: white;
   font-size: 14px;
+  width: 2000px;
 }
 .mark1 {
   background-image: url(foot1.png);
@@ -369,6 +394,12 @@ mark {
 .mark3text {
   padding-top: 198px;
   padding-left: 15px;
+}
+.markall {
+  display: flex;
+  gap: 16px;
+  width: 100%;
+  overflow: scroll;
 }
 /* mark end */
 /* figcaption */
