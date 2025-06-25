@@ -1,6 +1,7 @@
 body {
-  margin: 0;
+  margin: 0 auto;
   font-family: Inter, sans-serif;
+  max-width: 2000px;
 }
 /* head */
 header {
@@ -227,6 +228,12 @@ aside {
   background-size: cover;
   background-position: center;
   width: calc(50% - 6px);
+  text-align: center;
+}
+.figure-item4head {
+  font-size: 36px;
+  color: rgba(29, 29, 31, 1);
+  padding-top: 58px;
 }
 .figure-item5 {
   height: 580px;
@@ -254,7 +261,98 @@ aside {
   color: rgba(41, 151, 255, 1);
   font-size: 16px;
 }
-
+.footer {
+  display: flex;
+  gap: 16px;
+}
+.footerbg2 {
+  background-image: url(Link1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 1250px;
+  height: 668px;
+  display: flex;
+}
+.footerbg2head {
+  height: 44px;
+  width: 133px;
+  background-color: white;
+  border-radius: 999px;
+  border-color: transparent;
+  text-align: center;
+  margin-top: 566px;
+  margin-left: 70px;
+  font-size: 17px;
+}
+.footerbg2text {
+  font-size: 17px;
+  color: rgba(255, 255, 255, 0.6);
+  margin-top: 580px;
+  margin-left: 20px;
+}
+.footerbg2textspan {
+  color: rgba(255, 255, 255, 1);
+}
+summary {
+  text-align: center;
+  margin: 12px auto;
+}
+mark {
+  display: flex;
+  gap: 16px;
+  background-color: white;
+  color: white;
+  font-size: 14px;
+}
+.mark1 {
+  background-image: url(foot1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 236px;
+  width: 417px;
+}
+.mark2 {
+  background-image: url(foot2.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 236px;
+  width: 417px;
+}
+.mark3 {
+  background-image: url(foot3.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 236px;
+  width: 417px;
+}
+.mark4 {
+  background-image: url(foot4.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 236px;
+  width: 417px;
+}
+.mark5 {
+  background-image: url(foot5.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 236px;
+  width: 205px;
+}
+.mark1text {
+  padding-top: 198px;
+  padding-left: 15px;
+  text-align: left;
+  width: 223px;
+}
+.mark2text {
+  padding-top: 109px;
+  padding-left: 226px;
+}
+.mark3text {
+  padding-top: 198px;
+  padding-left: 15px;
+}
 @media (max-width: 600px) {
   .figure {
     flex-direction: column;
@@ -276,5 +374,13 @@ aside {
   }
   .figure-item6 {
     width: 100%;
+  }
+  article {
+    background-image: url(Background.png);
+    height: 500px;
+  }
+  section {
+    background-image: url(Figuresmall.png);
+    height: 500px;
   }
 }
