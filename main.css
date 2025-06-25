@@ -409,6 +409,14 @@ figcaption {
   padding-bottom: 21px;
 }
 /* figcaption end */
+@media (max-width: 1000px) {
+  .figure-item {
+    width: 100%;
+  }
+  aside {
+    display: none;
+  }
+}
 
 @media (max-width: 600px) {
   .figure {
