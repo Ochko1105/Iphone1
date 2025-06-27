@@ -21,6 +21,7 @@ header {
   height: 18px;
   width: 18px;
 }
+
 /* head end */
 /* nav */
 nav {
@@ -349,21 +350,33 @@ footer {
   gap: 16px;
 }
 .footerbg1 {
-  background-image: url(footer2.jpg);
-  background-repeat: no-repeat;
+  aspect-ratio: 1250/668;
   width: 1250px;
   height: 668px;
-  background-position: center;
-  background-size: cover;
-  display: flex;
+  position: relative;
 }
-.footerbg2 {
-  background-image: url(Link1.png);
-  background-repeat: no-repeat;
-  background-size: cover;
+.fmg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 
+.footerbg2 {
+  aspect-ratio: 1250/668;
   width: 1250px;
   height: 668px;
+  position: relative;
+}
+.fmg2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
   display: flex;
 }
 .footerbg2head {
@@ -376,36 +389,37 @@ footer {
   margin-top: 566px;
   margin-left: 70px;
   font-size: 17px;
+  position: absolute;
 }
 .footerbg2text {
   font-size: 17px;
   color: rgba(255, 255, 255, 0.6);
   padding-top: 580px;
-  padding-left: 20px;
+  padding-left: 223px;
+  position: absolute;
 }
 .footerbg2textspan {
   color: rgba(255, 255, 255, 1);
 }
-.footerbg3 {
-  background-image: url(footer.jpg);
-  background-repeat: no-repeat;
-  width: 1250px;
-  height: 668px;
-  background-position: center;
-  background-size: cover;
-}
-.footerbg4 {
-  background-image: url(tabletmov.png);
-  background-repeat: no-repeat;
-  background-size: cover;
 
+.footerbg4 {
+  aspect-ratio: 16/9;
+  position: relative;
   width: 690px;
   height: 368px;
   display: none;
 }
+.fmg4 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
 .footerbg4head {
-  height: 44px;
-  width: 133px;
+  height: 36px;
+  width: 108px;
   background-color: white;
   border-radius: 999px;
   border-color: transparent;
@@ -413,19 +427,35 @@ footer {
   margin-top: 305px;
   margin-left: 30px;
   font-size: 17px;
+  position: absolute;
 }
 .footerbg4text {
   font-size: 17px;
   color: rgba(255, 255, 255, 0.6);
   padding-top: 307px;
-  padding-left: 20px;
+  padding-left: 156px;
+  position: absolute;
+  text-align: left;
 }
 .footerbg4textspan {
   color: rgba(255, 255, 255, 1);
 }
-.tab {
-  background-image: url(figuretab.jpg);
+.tabpanel {
+  aspect-ratio: 16/9;
+  height: 495px;
+  width: 274px;
+  position: relative;
+  display: none;
 }
+.tab {
+  position: absolute;
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
 /* footer end */
 
 /* summary */
@@ -682,9 +712,6 @@ figcaption {
     width: 100%;
   }
 
-  .footer {
-    flex-direction: column;
-  }
   .footerbg2 {
     width: 100%;
   }
@@ -700,32 +727,23 @@ figcaption {
     flex-direction: row;
   }
   .footerbg4 {
-    background-image: url(Tabpanel.png);
+    aspect-ratio: 274/495;
     height: 495px;
-    width: 270px;
-  }
-  .tab {
-    background-image: url(Tabpanel1.png);
-  }
-  .tab2 {
-    background-image: url(Tabpanel2.png);
-  }
-  .tab3 {
-    background-image: url(Tabpanel3.png);
-  }
-  .tab4 {
-    background-image: url(Tabpanel4.png);
-  }
-  .tab5 {
-    background-image: url(Tabpanel5.png);
-  }
-  .tab6 {
-    background-image: url(Tabpanel6.png);
+    width: 274px;
+    display: none;
   }
   .footerbg4head {
     display: none;
   }
   .footerbg4text {
     display: none;
+  }
+  .tabpanel {
+    display: block;
+  }
+  footer {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
   }
 }
