@@ -506,7 +506,7 @@ mark {
   position: absolute;
 }
 .mark3text {
-  padding-top: 198px;
+  padding-top: 188px;
   padding-left: 15px;
   padding-bottom: 30px;
   position: absolute;
@@ -532,8 +532,9 @@ figcaption {
   display: flex;
   justify-content: flex-end;
   padding-top: 16px;
-  padding-right: 18px;
-  padding-bottom: 28px;
+  padding-bottom: 16px;
+  box-sizing: border-box;
+  padding-right: 16px;
 }
 /* figcaption end */
 @media (max-width: 800px) {
