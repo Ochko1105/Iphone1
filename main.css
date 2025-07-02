@@ -204,7 +204,7 @@ figure {
   padding-bottom: 20px;
 }
 .figure-itemfooter {
-  padding-top: 324px;
+  padding-top: 270px;
 }
 
 .figure-item2 {
@@ -500,6 +500,7 @@ mark {
   width: 417px;
 
   position: relative;
+  flex-shrink: 0;
 }
 .img1 {
   position: absolute;
@@ -558,6 +559,21 @@ figcaption {
   padding-bottom: 16px;
   box-sizing: border-box;
   padding-right: 16px;
+}
+.color {
+  font-family: sans-serif;
+  font-size: 14px;
+  background: linear-gradient(
+    90.43deg,
+    #0090f7 0%,
+    #ba62fc 33.33%,
+    #f2416b 66.67%,
+    #f55600 100%
+  );
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 500;
 }
 /* figcaption end */
 @media (max-width: 840px) {

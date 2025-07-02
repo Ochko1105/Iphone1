@@ -117,7 +117,8 @@ article {
   gap: 20px;
   padding-left: 140px;
   padding-top: 24px;
-  overflow-x: hidden;
+  overflow-x: scroll;
+  overflow-y: hidden;
 }
 .article {
   aspect-ratio: 16/9;
@@ -162,8 +163,10 @@ article {
   display: flex;
   padding-left: 140px;
   gap: 20px;
-  overflow-x: hidden;
+  overflow-x: scroll;
   padding-top: 24px;
+  flex-grow: 0;
+  overflow-y: hidden;
 }
 .main1imghead {
   height: 500px;
@@ -173,6 +176,7 @@ article {
   box-shadow: 2px 4px rgba(0, 0, 0, 0.08);
   display: flex;
   flex-shrink: 0;
+  flex-grow: 0;
 }
 .mainimg {
   position: absolute;
@@ -274,7 +278,8 @@ article {
   padding-left: 140px;
   display: flex;
   gap: 20px;
-  overflow-x: hidden;
+  overflow-x: scroll;
+  overflow-y: hidden;
 }
 .asidebox {
   height: 240px;
@@ -362,4 +367,82 @@ footer {
   height: 8px;
   width: 8px;
   font-size: 11px;
+}
+@media (max-width: 1000px) {
+  .header-text {
+    display: none;
+  }
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    background-color: rgba(245, 245, 247, 0.8);
+  }
+  .headimage {
+    display: block;
+    padding-right: 15px;
+  }
+  .header-image2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+  }
+  .header-image {
+    padding-left: 16px;
+  }
+}
+.summ1 {
+  font-size: 24px;
+  gap: 8px;
+  color: rgba(110, 110, 115, 1);
+  font-weight: 700;
+  padding-right: 940px;
+}
+.color {
+  font-family: sans-serif;
+  font-size: 24px;
+  background: linear-gradient(90deg, #0090f7 0%, #ba62fc 50%, #f2416b 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 700;
+}
+.sumfooter {
+  display: flex;
+}
+.head {
+  font-size: 44px;
+  font-weight: 700;
+  padding-right: 32px;
+}
+.dark-mode {
+  background-color: black;
+  color: white;
+}
+.darkmodefoot {
+  padding: 50px 50px;
+  border-radius: 999px;
+}
+.article:hover {
+  transform: scale(1.03);
+  transition: transform 0.5s;
+}
+.main1imghead:hover {
+  transform: scale(1.03);
+  transition: transform 0.5s;
+  flex-grow: 0;
+}
+.mainimgsecond:hover {
+  transform: scale(1.03);
+  transition: transform 0.5s;
+  flex-grow: 0;
+}
+.aside:hover {
+  transform: scale(1.03);
+  transition: transform 0.5s;
+}
+.asidebox:hover {
+  transform: scale(1.03);
+  transition: transform 0.5s;
 }
