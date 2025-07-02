@@ -75,6 +75,8 @@ main {
 .maintext {
   font-size: 14px;
   color: rgba(29, 29, 31, 1);
+  font-weight: 700;
+  text-align: center;
 }
 .ahref1 {
   color: rgba(0, 102, 204, 1);
@@ -89,6 +91,7 @@ main {
   height: 146px;
   width: 136px;
   gap: 16px;
+  align-items: center;
 }
 .cardimg {
   height: 78px;
@@ -99,6 +102,7 @@ section {
   gap: 12px;
   max-width: 1920px;
   justify-content: center;
+  text-align: center;
 }
 .summarytext {
   display: flex;
@@ -117,8 +121,8 @@ article {
   gap: 20px;
   padding-left: 140px;
   padding-top: 24px;
+  padding-bottom: 20px;
   overflow-x: scroll;
-  overflow-y: hidden;
 }
 .article {
   aspect-ratio: 16/9;
@@ -128,6 +132,7 @@ article {
   border-color: transparent;
   position: relative;
   background-color: aqua;
+  transition: box-shadow 0.3s;
 }
 .summoryimg {
   position: absolute;
@@ -139,6 +144,7 @@ article {
 }
 .articletextall {
   padding-left: 30px;
+  font-weight: 700;
 }
 
 .articletext {
@@ -158,6 +164,7 @@ article {
   padding-top: 98px;
   font-size: 18px;
   color: rgba(29, 29, 31, 1);
+  font-weight: 400;
 }
 .mainsecond {
   display: flex;
@@ -166,7 +173,7 @@ article {
   overflow-x: scroll;
   padding-top: 24px;
   flex-grow: 0;
-  overflow-y: hidden;
+  padding-bottom: 10px;
 }
 .main1imghead {
   height: 500px;
@@ -220,12 +227,14 @@ article {
 .mainimgsecondtext {
   font-size: 18px;
   color: rgba(29, 29, 31, 1);
+  font-weight: 700;
 }
 .mainimgsecondprice {
   font-size: 14px;
   color: rgba(29, 29, 31, 1);
   padding-top: 32px;
   box-sizing: border-box;
+  font-weight: 400;
 }
 .plus {
   padding-top: 58px;
@@ -279,7 +288,7 @@ article {
   display: flex;
   gap: 20px;
   overflow-x: scroll;
-  overflow-y: hidden;
+  padding-bottom: 10px;
 }
 .asidebox {
   height: 240px;
@@ -427,22 +436,29 @@ footer {
 .article:hover {
   transform: scale(1.03);
   transition: transform 0.5s;
+  box-shadow: 0 0 11px rgba(33, 33, 33, 0.2);
 }
 .main1imghead:hover {
   transform: scale(1.03);
   transition: transform 0.5s;
-  flex-grow: 0;
+  box-shadow: 0 0 11px rgba(33, 33, 33, 0.2);
 }
 .mainimgsecond:hover {
   transform: scale(1.03);
   transition: transform 0.5s;
-  flex-grow: 0;
+  box-shadow: 0 0 11px rgba(33, 33, 33, 0.2);
 }
 .aside:hover {
   transform: scale(1.03);
   transition: transform 0.5s;
+  box-shadow: 0 0 11px rgba(33, 33, 33, 0.2);
 }
 .asidebox:hover {
   transform: scale(1.03);
   transition: transform 0.5s;
+  box-shadow: 0 0 11px rgba(33, 33, 33, 0.2);
+}
+.button:hover {
+  background-color: black;
+  color: white;
 }
