@@ -413,7 +413,7 @@ footer {
   font-family: sans-serif;
   font-size: 24px;
   background: linear-gradient(90deg, #0090f7 0%, #ba62fc 50%, #f2416b 100%);
-  -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
   font-weight: 700;
 }
