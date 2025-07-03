@@ -4,6 +4,9 @@ body {
   max-width: 1920px;
   background-color: rgba(245, 245, 247, 0.8);
 }
+body ::-webkit-scrollbar {
+  display: none;
+}
 /* head */
 header {
   width: 100%;
@@ -426,13 +429,30 @@ footer {
   padding-right: 32px;
 }
 .dark-mode {
-  background-color: black;
+  background-color: gray;
   color: white;
+  position: relative;
 }
 .darkmodefoot {
-  padding: 50px 50px;
-  border-radius: 999px;
+  padding: 40px 100px;
+  border-radius: 500px;
+  font-size: 50px;
+  background-color: transparent;
 }
+.dark-mode .maintext {
+  color: white;
+}
+.dark-mode .footerhead {
+  color: white;
+}
+.dark-mode .button {
+  color: white;
+}
+.dark-mode nav {
+  background-color: darkblue;
+  color: white;
+}
+
 .article:hover {
   transform: scale(1.03);
   transition: transform 0.5s;
