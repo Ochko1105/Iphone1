@@ -3,6 +3,9 @@ body {
   font-family: Inter, sans-serif;
   max-width: 1920px;
 }
+body ::-webkit-scrollbar {
+  display: none;
+}
 /* head */
 header {
   width: 100%;
@@ -493,6 +496,7 @@ mark {
   color: white;
   font-size: 14px;
   max-width: 1920px;
+  width: 100%;
 }
 .mark1 {
   aspect-ratio: 286/194;
@@ -762,7 +766,8 @@ figcaption {
   }
   footer {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    padding-left: 180px;
     gap: 20px;
   }
   .img1 {
