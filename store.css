@@ -21,7 +21,7 @@ header {
   left: 0;
   bottom: 0;
   right: 0;
-  max-width: 1920px;
+
   z-index: 10;
 }
 .header-text {
@@ -46,11 +46,8 @@ nav {
 
   padding-bottom: 16px;
   background-color: white;
-  max-width: 2000px;
 }
-.storebackground {
-  max-width: 1920px;
-}
+
 .main {
   display: flex;
   justify-content: space-between;

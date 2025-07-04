@@ -606,7 +606,11 @@ figcaption {
   header {
     display: flex;
     justify-content: space-between;
-    position: fixed;
+    position: sticky;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
     background-color: rgba(245, 245, 247, 0.8);
   }
   .headimage {
