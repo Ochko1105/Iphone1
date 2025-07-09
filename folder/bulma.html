@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Hello</title>
+    <link rel="stylesheet" href="bulma.css" />
+  </head>
+  <body style="margin: 0 auto">
+    <div style="display: flex; gap: 40px">
+      <div class="card">
+        <p>Calculator</p>
+        <input type="text" id="age-input" />
+        <input type="text" id="age-input2" />
+        <input type="text" id="age-input3" />
+        <div style="padding-top: 20px">
+          <button id="submit2">+</button>
+          <button id="submit3">-</button>
+          <button id="submit4">*</button>
+          <button id="submit5">/</button>
+          <button id="min-button">Min</button>
+          <button id="max-button">Max</button>
+          <button id="average-button">Avg</button>
+        </div>
+      </div>
+
+      <div class="card">
+        <p>Loop</p>
+        <input type="text" id="n" />
+        <button>Avg</button>
+      </div>
+    </div>
+    <script>
+      let n = 4;
+      let index = 0;
+      let sum = 0;
+
+      while (index < n) {
+        index = index + 1;
+        sum = sum + index;
+      }
+      console.log(sum);
+    </script>
+  </body>
+  <script src="2dohi.js"></script>
+</html>
