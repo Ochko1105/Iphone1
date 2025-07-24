@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Star</title>
+  </head>
+  <body style="margin: 0 auto">
+    <script>
+      let n = 5;
+      let result = "";
+      let k = 0;
+      let i = 2;
+
+      while (k < n) {
+        result = result + "* ";
+        k = k + 1;
+
+        if (k <= i) {
+          result = result + "* ";
+          i = i + 1;
+        }
+
+        result = result + "\n";
+      }
+      console.log(result);
+    </script>
+  </body>
+</html>

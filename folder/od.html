@@ -7,16 +7,78 @@
   </head>
   <body style="margin: 0 auto">
     <script>
-      let n = 10;
-      let index = "";
-      let sum = "";
+      let i = 5;
+      let bagana = 1;
+      let result = "";
 
-      while (index < n) {
-        index = index + "*";
-        sum = sum + index;
+      while (bagana <= i) {
+        let mor = 1;
+
+        while (mor <= i) {
+          result = result + "*";
+          mor = mor + 1;
+        }
+
+        bagana = bagana + 1;
+        result = result + "\n";
       }
+      console.log(result);
 
-      console.log(sum);
+      let size = 5;
+      let mor2 = 1;
+
+      let result2 = "";
+
+      while (mor2 <= size) {
+        let bagana1 = 1;
+
+        while (bagana1 <= size) {
+          if (bagana1 == 1 || bagana1 == size || mor2 == 1 || mor2 == size) {
+            result2 = result2 + "*";
+          } else {
+            result2 = result2 + " ";
+          }
+          bagana1 = bagana1 + 1;
+        }
+
+        mor2 = mor2 + 1;
+        result2 = result2 + "\n";
+      }
+      console.log(result2);
+
+      let size11 = 5;
+      let row11 = 1;
+
+      while (row11 <= size11) {
+        let result = "";
+        let column = 1;
+        while (column <= row11) {
+          result = result + "*";
+          column = column + 1;
+        }
+
+        console.log(result);
+        row11 = row11 + 1;
+      }
+      let n = 5;
+      let mor4 = 1;
+
+      let result4 = "";
+      while (mor4 <= n) {
+        let bagana4 = 1;
+
+        while (bagana4 <= n * 2 - 1) {
+          if (bagana4 > n - mor4 && bagana4 < n + mor4) {
+            result4 = result4 + "*";
+          } else {
+            result4 = result4 + " ";
+          }
+          bagana4 = bagana4 + 1;
+        }
+        mor4 = mor4 + 1;
+        result4 = result4 + "\n";
+      }
+      console.log(result4);
     </script>
   </body>
 </html>
