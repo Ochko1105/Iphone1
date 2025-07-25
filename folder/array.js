@@ -11,7 +11,7 @@ function findeyreg(eyreg) {
 
 console.log(findeyreg(grades));
 function findmin(grades) {
-  let min = Infinity;
+  let min = grades[0];
   for (i = 0; i < grades.length; i++) {
     if (grades[i] < min && grades[i] >= 0) {
       min = grades[i];
@@ -19,7 +19,7 @@ function findmin(grades) {
   }
   return min;
 }
-console.log(findmin(grades));
+console.log(findmin("grade", grades));
 
 function findmax(grades) {
   let max = grades[0];

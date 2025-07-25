@@ -49,7 +49,7 @@ console.log(numbers4(5));
 function numbers5(number) {
   star = "";
   for (i = 1; i <= number; i++) {
-    for (j = 1; j <= number; j++) {
+    for (j = 1; j <= i; j++) {
       if (j == i) {
         star += j;
       }
@@ -60,3 +60,28 @@ function numbers5(number) {
   return star;
 }
 console.log(numbers5(5));
+function problem5(n) {
+  urjver = "";
+  for (i = 1; i <= n; i++) {
+    urjver += i * 5;
+    urjver = urjver + "\n";
+  }
+
+  return urjver;
+}
+console.log(problem5(6));
+function problem6(n) {
+  oron = 0;
+  {
+    for (i = 1; i < n; i++) {}
+  }
+}
+function ifleapyear(year) {
+  if (year % 4 == 0 && year % 400 == 0) {
+    year = "Leap year mun";
+  } else {
+    year = "leap year bish";
+  }
+  return year;
+}
+console.log(ifleapyear(2000));
